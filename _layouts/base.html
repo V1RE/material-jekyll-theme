@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {{ content }}
+
+  <script src="/assets/materialize.min.js"></script>
+  {% if site.trackingid %}
+    {% include analytics.html %}
+  {% endif %}
+</body>
+</html>

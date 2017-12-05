@@ -1,0 +1,15 @@
+---
+# main.scss
+---
+
+@import "mdi/materialdesignicons";
+@import "materialize/materialize";
+
+nav {
+  .nav-wrapper {
+    .nav-title {
+      margin: 0 15px;
+      padding: 0;
+    }
+  }
+}
