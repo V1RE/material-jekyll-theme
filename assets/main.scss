@@ -5,8 +5,56 @@
 nav {
   .nav-wrapper {
     .nav-title {
-      margin: 0 15px;
-      padding: 0;
+      padding: 0 18px;
     }
+  }
+}
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+.sidebar-logo {
+  height: 120px;
+  width: 300px;
+  background-image: url(/assets/sidebar.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+
+  img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+main {
+  min-height: calc(100vh - 84px);
+}
+
+footer {
+  .container{
+    text-align: center;
+
+    a{
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+
+  .nav-title {
+    padding: 0 !important;
+  }
+
+  main {
+    min-height: calc(100vh - 76px);
   }
 }

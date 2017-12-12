@@ -2,17 +2,10 @@
 layout: base
 ---
 
-{% include navbar.html %}
+{% include header.html %}
 <main class="row">
-  <div class=" col l3 show-on-medium-and-up grey darken-3 sidebar">
-    <div class="collection">
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item active">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-      </div>
-  </div>
-  <div class="col s12 l9 page-content">
+  <div class="col s12 page-content">
     {{ content }}
   </div>
 </main>
+{% include footer.html %}

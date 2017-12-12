@@ -1,0 +1,29 @@
+<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi mdi-menu"></i></a>
+      <a href="#" class="nav-title">{{site.title}}</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul id="slide-out" class="side-nav fixed">
+    <div class="sidebar-logo">
+      <a href="/">
+        <!-- <h1 class="sidebar-logo-text center white-text flow-text">{{ site.title }}</h1> -->
+        <img src="/assets/logo.png" alt="logo" class="center">
+      </a>
+    </div>
+    {% for item in site.navigation %}
+      {% assign class = nil %}
+      {% if page.url contains item.url %}
+        {% assign class = 'active' %}
+      {% endif %}
+      <li class="{{ class }}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+    <li><a href="#!">Second Sidebar Link</a></li>
+  </ul>
+</header>
